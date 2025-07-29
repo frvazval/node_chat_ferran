@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+  color: black;
+}
+
+:root {
+  color-scheme: light dark;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  display: grid;
+  grid-template-rows: 1fr;
+  height: 100vh;
+  padding: 2rem 2rem 2rem 2rem;
+}
+
+h1 {
+  text-align: center;
+}
+
+main {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  max-width: 400px;
+  height: 100%;
+  position: relative;
+  background-color: #ccc;
+  padding: 0 1rem;
+}
+
+#form {
+  bottom: 0;
+  display: flex;
+  height: 48px;
+  left: 0;
+  padding: 4px;
+  position: absolute;
+  right: 0;
+
+  button {
+    background-color: #09f;
+    color: #fff;
+    border: 0;
+    margin: 4px;
+    border-radius: 4px;
+    &:hover {
+      background-color: #0cf;
+      color: black;
+    }
+  }
+}
+
+#message {
+  border-radius: 9999px;
+  border: 1px solid #eee;
+  flex: 1;
+  margin: 4px;
+  padding: 0 8px;
+  background-color: darkcyan;
+  color: white;
+  &::placeholder {
+    color: #ccc;
+    font-style: italic;
+  }
+}
+
+#message:focus {
+  outline: 0;
+}
+
+#messages {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow-y: scroll;
+  height: 80%;
+  scroll-behavior: smooth;
+  padding-bottom: 5rem;
+  padding-right: 1rem;
+  
+
+  li {
+    color: black;
+  }
+
+  .message {
+    display: flex;
+    justify-content: space-between;
+    margin: 4px 0;
+    padding: 4px 8px;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    max-width: 80%;
+
+    span {
+      font-size: 0.8rem;
+      color: back;
+      font-style: italic;
+    }
+  }
+
+  .message.own {
+    justify-content: space-between;
+    background-color: #d0eaff;
+    margin-left: auto;
+  }
+
+  .message.other {
+    justify-content: space-between;
+    background-color: #ffe0c0;
+    margin-right: auto;
+  }
+}
+#formUserName {
+    margin-bottom: 2rem;
+}
+#userName {
+    background-color: darkcyan;
+    color: white;
+    outline: none;
+    border: none;
+    padding: 5px 10px;
+    &::placeholder {
+        color: #ccc;
+        font-style: italic;
+    }
+
+}

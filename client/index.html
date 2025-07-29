@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="module" src="js/chat.js"></script>
+    <link rel="shortcut icon" href="icons/icon_chat.svg" type="image/x-icon" />
+  </head>
+  <body>
+    <main>
+      <h1>CHAT</h1>
+      <form id="formUserName">
+        <label for="username">Usuario</label>
+        <input
+          type="text"
+          name="userName"
+          id="userName"
+          placeholder="Escribe tu nombre"
+          autocomplete="off"
+        />
+        <button type="submit">Aceptar</button>
+      </form>
+      <ul id="messages"></ul>
+      <form id="form">
+        <input
+          type="text"
+          name="message"
+          id="message"
+          placeholder="Escribe el mensaje"
+          autocomplete="off"
+        />
+        <button type="submit">▶</button>
+      </form>
+    </main>
+  </body>
+</html>

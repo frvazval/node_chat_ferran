@@ -1,0 +1,29 @@
+{
+  "name": "node_chat",
+  "version": "1.0.0",
+  "description": "Chat privado",
+  "homepage": "https://github.com/frvazval/NODE_CHAT#readme",
+  "bugs": {
+    "url": "https://github.com/frvazval/NODE_CHAT/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frvazval/NODE_CHAT.git"
+  },
+  "license": "ISC",
+  "author": "Paco",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --watch app.js"
+  },
+  "dependencies": {
+    "@libsql/client": "^0.15.9",
+    "express": "^5.1.0",
+    "socket.io": "^4.8.1"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0"
+  }
+}
